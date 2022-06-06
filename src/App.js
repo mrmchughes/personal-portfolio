@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="App">
+    <div className="App font-serif">
       <section className="flex flex-row justify-center">
         <img
           src={require("./imgs/profile image.png")}
@@ -88,16 +88,20 @@ function App() {
           </div>
 
           <div className="mt-2.5 flex flex-row justify-end space-x-4">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              alt="Github link"
-              className="h-8 w-8"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
-              alt="LinkedIn link"
-              className="h-8 w-8"
-            />
+            <a href="https://github.com/mrmchughes">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="Github Repository"
+                className="h-8 w-8"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/michaelhughes27/">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                alt="LinkedIn link"
+                className="h-8 w-8"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -106,111 +110,200 @@ function App() {
         <h2>My work</h2>
         <div className="border-solid border border-black">
           <div>
-            <img src="" alt="Screenshot of Memory Card Project" />
+            <img
+              src="https://user-images.githubusercontent.com/10659805/153058789-c29aa45f-28d7-4bbc-8905-9ebbfa880e4d.png"
+              alt="Screenshot of Memory Card Project"
+            />
             <div>
               <p>Memory Card</p>
               <div>
                 <a href="https://github.com/mrmchughes/Memory-Card">
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-                    Github Repository
-                  </button>
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="Github Repository"
+                    className="h-8 w-8"
+                  />
                 </a>
                 <a href="https://mrmchughes.github.io/Memory-Card/">
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-                    Live Preview
-                  </button>
+                  <img
+                    src={require("./imgs/arrow-top-right-bold-box-outline.svg")}
+                    alt="Live Preview"
+                  />
                 </a>
               </div>
-              <p>
+              <p className="mt-2.5">
                 Developed a Card Memory game, where players click on a card in
                 an array, and attempt to remember which ones they have already
-                selected. Built With: HTML | CSS | JavaScript | React
+                selected.
+              </p>
+              <p className="mt-2.5">
+                Built With: HTML | CSS | JavaScript | React
               </p>
             </div>
           </div>
         </div>
         <div className="border-solid border border-black">
           <div>
-            <img src="" alt="Screenshot of CV-Application Project" />
+            <img
+              src="https://user-images.githubusercontent.com/10659805/172234215-bb18174b-da8a-4b6e-aa1f-c41522c51b79.png"
+              alt="Screenshot of CV-Application Project"
+            />
             <div>
               <p>CV-Application</p>
               <div>
-                <p>Github Repository</p>
-                <p>Live Preview</p>
+                <a href="https://github.com/mrmchughes/CV-Application">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="Github Repository"
+                    className="h-8 w-8"
+                  />
+                </a>
+                <a href="https://mrmchughes.github.io/CV-Application">
+                  <img
+                    src={require("./imgs/arrow-top-right-bold-box-outline.svg")}
+                    alt="Live Preview"
+                  />
+                </a>
               </div>
-              <p>
+              <p className="mt-2.5">
                 Developed a React application for users to input their
                 information, and using the user's information, dynamically
-                populate a CV. Built With: HTML | CSS | JavaScript | React
+                populate a CV.
+              </p>
+              <p className="mt-2.5">
+                Built With: HTML | CSS | JavaScript | React
               </p>
             </div>
           </div>
         </div>
         <div className="border-solid border border-black">
           <div>
-            <img src="" alt="Screenshot of Odins_Operations Project" />
+            <img
+              src="https://user-images.githubusercontent.com/10659805/127752181-0bf3586a-fa60-4eb8-888b-d66c3b30b4bd.png"
+              alt="Screenshot of Odins_Operations Project"
+            />
             <div>
               <p>Odins_Operations</p>
               <div>
-                <p>Github Repository</p>
-                <p>Live Preview</p>
+                <a href="https://github.com/mrmchughes/odins_operations">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="Github Repository"
+                    className="h-8 w-8"
+                  />
+                </a>
+                <a href="https://mrmchughes.itch.io/odins-operations">
+                  <img
+                    src={require("./imgs/arrow-top-right-bold-box-outline.svg")}
+                    alt="Live Preview"
+                  />
+                </a>
               </div>
-              <p>
+              <p className="mt-2.5">
                 A group project developed for The Odin Project July 2021 game
                 jam, inspired by the classic edutainment game Number Munchers.
-                Built With: HTML | CSS | JavaScript
               </p>
+              <p className="mt-2.5">Built With: HTML | CSS | JavaScript</p>
             </div>
           </div>
         </div>
         <div className="border-solid border border-black">
           <div>
-            <img src="" alt="Screenshot of Todo-List Project" />
+            <img
+              src="https://user-images.githubusercontent.com/10659805/172234883-f6d0bd42-cd2d-4efc-a971-732cb0f855b7.png"
+              alt="Screenshot of Todo-List Project"
+            />
             <div>
               <p>Todo-List</p>
               <div>
-                <p>Github Repository</p>
-                <p>Live Preview</p>
+                <a href="https://github.com/mrmchughes/todo-list-project-2">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="Github Repository"
+                    className="h-8 w-8"
+                  />
+                </a>
+                <a href="https://mrmchughes.github.io/todo-list-project-2/">
+                  <img
+                    src={require("./imgs/arrow-top-right-bold-box-outline.svg")}
+                    alt="Live Preview"
+                  />
+                </a>
               </div>
-              <p>
+              <p className="mt-2.5">
                 Developed a Todo-List application for users to create Todo Items
-                and Project Folders. Built With: HTML | CSS | JavaScript |
-                Webpack | Local Storage
+                and Project Folders.
+              </p>
+              <p className="mt-2.5">
+                Built With: HTML | CSS | JavaScript | Webpack | Local Storage
               </p>
             </div>
           </div>
         </div>
         <div className="border-solid border border-black">
           <div>
-            <img src="" alt="Screenshot of Weather App Project" />
+            <img
+              src="https://user-images.githubusercontent.com/10659805/172235150-a11b8184-580b-4b18-8edf-f24dfd18770b.png"
+              alt="Screenshot of Weather App Project"
+            />
             <div>
               <p>Weather App</p>
               <div>
-                <p>Github Repository</p>
-                <p>Live Preview</p>
+                <a href="https://github.com/mrmchughes/Weather-App">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="Github Repository"
+                    className="h-8 w-8"
+                  />
+                </a>
+                <a href="https://mrmchughes.github.io/Weather-App/">
+                  <img
+                    src={require("./imgs/arrow-top-right-bold-box-outline.svg")}
+                    alt="Live Preview"
+                  />
+                </a>
               </div>
-              <p>
+              <p className="mt-2.5">
                 Developed an application that allows for users to input a
                 location, and with the use of the Open Weather API, receive the
-                searched location's current forecast. Built With: HTML | CSS |
-                JavaScript | Git
+                searched location's current forecast.
+              </p>
+              <p className="mt-2.5">
+                Built With: HTML | CSS | JavaScript | Git
               </p>
             </div>
           </div>
         </div>
         <div className="border-solid border border-black">
           <div>
-            <img src="" alt="Screenshot of Project" />
+            <img
+              src="https://user-images.githubusercontent.com/10659805/164803283-17f48e5d-c2cd-4a71-b931-6778d206e1e1.png"
+              alt="Screenshot of Project"
+            />
             <div>
               <p>Shopping Cart</p>
               <div>
-                <p>Github Repository</p>
-                <p>Live Preview</p>
+                <a href="https://github.com/mrmchughes/shopping-cart">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="Github Repository"
+                    className="h-8 w-8"
+                  />
+                </a>
+                <a href="https://mrmchughes.github.io/shopping-cart/">
+                  <img
+                    src={require("./imgs/arrow-top-right-bold-box-outline.svg")}
+                    alt="Live Preview"
+                  />
+                </a>
               </div>
-              <p>
+              <p className="mt-2.5">
                 Developed an E-Commerce site, incorporating Routes with
-                react-router-dom. Built with: HTML | CSS | JavaScript | React |
-                NPM | Tailwind CSS | TypeScript
+                react-router-dom.
+              </p>
+              <p className="mt-2.5">
+                Built with: HTML | CSS | JavaScript | React | NPM | Tailwind CSS
+                | TypeScript
               </p>
             </div>
           </div>
@@ -219,23 +312,28 @@ function App() {
 
       <section className="">
         <h2>Contact me</h2>
-        <p>
+        <p className="mt-2.5">
           Please get in touch if you think our work could be mutually
           beneficial.
         </p>
-        <p>Newton, MA</p>
-        <p>mrmchughes27@gmail.com</p>
-        <div className="mt-2.5 flex flex-row justify-start space-x-4">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-            alt="Github link"
-            className="h-8 w-8"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
-            alt="LinkedIn link"
-            className="h-8 w-8"
-          />
+        <p className="mt-2.5">Newton, MA</p>
+        <p className="mt-2.5">mrmchughes27@gmail.com</p>
+
+        <div className="mt-2.5 flex flex-row justify-start space-x-4 mt-2.5">
+          <a href="https://github.com/mrmchughes">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="Github Repository"
+              className="h-8 w-8"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/michaelhughes27/">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+              alt="LinkedIn link"
+              className="h-8 w-8"
+            />
+          </a>
         </div>
       </section>
     </div>
