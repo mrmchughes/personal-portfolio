@@ -4,11 +4,11 @@ import { mdiArrowTopRightBoldBox } from "@mdi/js";
 function App() {
   return (
     <div className="App font-serif">
-      <section className="flex flex-row flex-wrap justify-center p-2.5">
+      <section className="flex flex-col text-center sm:flex-row sm:text-left justify-center p-2.5">
         <img
           src={require("./imgs/profile image.png")}
           alt="Michael Hughes"
-          className="object-contain min-h-48 max-w-sm mr-2.5"
+          className="object-contain min-h-48 max-w-sm mr-3.5"
         />
         <div className="">
           <p className="text-xl">About me</p>
@@ -21,11 +21,11 @@ function App() {
             journey.
           </p>
 
-          <p className="mt-2.5">
+          <p className="mt-2.5 text-xl">
             Some of the tools I have used developing applications:
           </p>
 
-          <div className="grid gap-2.5 grid-cols-auto-fit">
+          <div className="grid gap-4 grid-cols-auto-fit">
             <figure>
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -90,11 +90,11 @@ function App() {
             </figure>
           </div>
 
-          <div className="mt-2.5 flex flex-row justify-end space-x-4">
+          <div className="mt-2.5 flex flex-row justify-center sm:justify-end space-x-4">
             <a href="https://github.com/mrmchughes">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                alt="Github Repository"
+                alt="Github Profile"
                 className="h-8 w-8"
               />
             </a>
@@ -109,9 +109,9 @@ function App() {
         </div>
       </section>
 
-      <section className="flex justify-center">
+      <section className="flex text-center sm:text-left justify-center m-3.5">
         <div>
-          <p className="text-xl">My work</p>
+          <p className="mt-2.5 text-xl">My work</p>
 
           <div className="grid gap-3 grid-cols-auto-fill mt-2.5">
             <div className="border-solid border border-black p-2.5">
@@ -121,8 +121,8 @@ function App() {
                 className="w-full h-36 mb-2"
               />
               <div>
-                <div className="flex flex-row space-x-4">
-                  <p className="mr-2.5">Memory Card</p>
+                <div className="flex justify-center flex-row space-x-4">
+                  <p className="text-lg">Memory Card</p>
                   <a href="https://github.com/mrmchughes/Memory-Card">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -131,7 +131,7 @@ function App() {
                     />
                   </a>
                   <a href="https://mrmchughes.github.io/Memory-Card/">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1} />
+                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -152,8 +152,8 @@ function App() {
                 className="w-full h-36 mb-2"
               />
               <div>
-                <div className="flex flex-row space-x-4">
-                  <p className="mr-2.5">CV-Application</p>
+                <div className="flex justify-center flex-row space-x-4">
+                  <p className="text-lg">CV-App</p>
                   <a href="https://github.com/mrmchughes/CV-Application">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -162,7 +162,7 @@ function App() {
                     />
                   </a>
                   <a href="https://mrmchughes.github.io/CV-Application">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1} />
+                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -183,8 +183,8 @@ function App() {
                 className="w-full h-36 mb-2"
               />
               <div>
-                <div className="flex flex-row space-x-4">
-                  <p className="mr-2.5">Odins_Operations</p>
+                <div className="flex justify-center flex-row space-x-4">
+                  <p className="text-lg">Odins_Operations</p>
                   <a href="https://github.com/mrmchughes/odins_operations">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -193,7 +193,7 @@ function App() {
                     />
                   </a>
                   <a href="https://mrmchughes.itch.io/odins-operations">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1} />
+                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -211,8 +211,8 @@ function App() {
                 className="w-full h-36 mb-2"
               />
               <div>
-                <div className="flex flex-row space-x-4">
-                  <p className="mr-2.5">Todo-List</p>
+                <div className="flex justify-center flex-row space-x-4">
+                  <p className="text-lg">Todo-List</p>
                   <a href="https://github.com/mrmchughes/todo-list-project-2">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -221,7 +221,7 @@ function App() {
                     />
                   </a>
                   <a href="https://mrmchughes.github.io/todo-list-project-2/">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1} />
+                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -241,8 +241,8 @@ function App() {
                 className="w-full h-36 mb-2"
               />
               <div>
-                <div className="flex flex-row space-x-4">
-                  <p className="mr-2.5">Weather App</p>
+                <div className="flex justify-center flex-row space-x-4">
+                  <p className="text-lg">Weather App</p>
                   <a href="https://github.com/mrmchughes/Weather-App">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -251,7 +251,7 @@ function App() {
                     />
                   </a>
                   <a href="https://mrmchughes.github.io/Weather-App/">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1} />
+                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -272,8 +272,8 @@ function App() {
                 className="w-full h-36 mb-2"
               />
               <div>
-                <div className="flex flex-row space-x-4">
-                  <p className="mr-2.5">Shopping Cart</p>
+                <div className="flex justify-center flex-row space-x-4">
+                  <p className="text-lg">Shopping Cart</p>
                   <a href="https://github.com/mrmchughes/shopping-cart">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -282,7 +282,7 @@ function App() {
                     />
                   </a>
                   <a href="https://mrmchughes.github.io/shopping-cart/">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1} />
+                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -299,30 +299,32 @@ function App() {
         </div>
       </section>
 
-      <section className="flex flex-col flex-wrap justify-center p-2.5 mt-2.5">
-        <p className="text-xl">Contact me</p>
-        <p className="mt-2.5">
-          Please get in touch if you think our work could be mutually
-          beneficial.
-        </p>
-        <p className="mt-2.5">Newton, MA</p>
-        <p className="mt-2.5">mrmchughes27@gmail.com</p>
+      <section className="flex flex-row text-center sm:text-left justify-center p-2.5 mt-2.5">
+        <div>
+          <p className="text-xl">Contact me</p>
+          <p className="mt-2.5">
+            Please get in touch if you think our work could be mutually
+            beneficial.
+          </p>
+          <p className="mt-2.5">Newton, MA</p>
+          <p className="mt-2.5">mrmchughes27@gmail.com</p>
 
-        <div className="mt-2.5 flex flex-row justify-start space-x-4 mt-2.5">
-          <a href="https://github.com/mrmchughes">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              alt="Github Repository"
-              className="h-8 w-8"
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/michaelhughes27/">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
-              alt="LinkedIn link"
-              className="h-8 w-8"
-            />
-          </a>
+          <div className="mt-2.5 flex flex-row justify-center sm:justify-start space-x-4 mt-2.5">
+            <a href="https://github.com/mrmchughes">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="Github Repository"
+                className="h-8 w-8"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/michaelhughes27/">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                alt="LinkedIn link"
+                className="h-8 w-8"
+              />
+            </a>
+          </div>
         </div>
       </section>
     </div>
