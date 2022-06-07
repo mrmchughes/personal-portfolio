@@ -7,13 +7,21 @@ function App() {
       <section className="flex flex-row flex-wrap justify-center sm:justify-between p-6">
         <div className="flex text-center text-3xl">Michael Hughes</div>
         <div className="flex text-center text-2xl space-x-4">
-          <a href="#about">About</a>
+          <a className="hover:scale-110" href="#about">
+            About
+          </a>
 
-          <a href="#tools">Tools</a>
+          <a className="hover:scale-110" href="#tools">
+            Tools
+          </a>
 
-          <a href="#myWork">My Work</a>
+          <a className="hover:scale-110" href="#myWork">
+            My Work
+          </a>
 
-          <a href="#contact">Contact</a>
+          <a className="hover:scale-110" href="#contact">
+            Contact
+          </a>
         </div>
       </section>
 
@@ -27,8 +35,8 @@ function App() {
           className="object-contain min-h-48 max-w-sm mr-3.5"
         />
         <div className="">
-          <p className="text-xl">About me</p>
-          <p className="mt-2.5 max-w-md">
+          <p className="text-2xl">About me</p>
+          <p className="mt-2.5 max-w-md text-xl">
             During a time when I was feeling dissatisfied in my previous career,
             I began coding by working my way through a beginner’s book on
             Python. I knew even then I had found something I was truly
@@ -42,36 +50,33 @@ function App() {
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                 alt="Github Profile"
-                className="h-10 w-10"
+                className="h-10 w-10 hover:scale-110"
               />
             </a>
             <a href="https://www.linkedin.com/in/michaelhughes27/">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                 alt="LinkedIn link"
-                className="h-10 w-10"
+                className="h-10 w-10 hover:scale-110"
               />
             </a>
           </div>
         </div>
       </section>
 
-      <section
-        id="tools"
-        className="flex flex-col text-center sm:flex-row sm:text-left justify-center p-2.5"
-      >
-        <p className="mt-2.5 text-xl">
+      <section id="tools" className="flex flex-col justify-center p-2.5">
+        <p className="mt-2.5 text-2xl text-center">
           Some of the tools I have used developing applications:
         </p>
 
-        <div className="grid gap-4 grid-cols-auto-fit">
+        <div className="flex flex-row justify-center flex-wrap space-x-4 mt-2.5">
           <figure>
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="React"
               className="h-16 w-16"
             />
-            <figcaption>React</figcaption>
+            <figcaption className="text-center">React</figcaption>
           </figure>
 
           <figure>
@@ -80,7 +85,7 @@ function App() {
               alt="CSS"
               className="h-16 w-16"
             />
-            <figcaption>CSS</figcaption>
+            <figcaption className="text-center">CSS</figcaption>
           </figure>
 
           <figure>
@@ -89,7 +94,7 @@ function App() {
               alt="HTML"
               className="h-16 w-16"
             />
-            <figcaption>HTML</figcaption>
+            <figcaption className="text-center">HTML</figcaption>
           </figure>
 
           <figure>
@@ -98,7 +103,7 @@ function App() {
               alt="JavaScript"
               className="h-16 w-16"
             />
-            <figcaption>JavaScript</figcaption>
+            <figcaption className="text-center">JavaScript</figcaption>
           </figure>
 
           <figure>
@@ -107,7 +112,7 @@ function App() {
               alt="NPM"
               className="h-16 w-16"
             />
-            <figcaption>NPM</figcaption>
+            <figcaption className="text-center">NPM</figcaption>
           </figure>
 
           <figure>
@@ -116,7 +121,7 @@ function App() {
               alt="Tailwind CSS"
               className="h-16 w-16"
             />
-            <figcaption>Tailwind CSS</figcaption>
+            <figcaption className="text-center">Tailwind CSS</figcaption>
           </figure>
 
           <figure>
@@ -125,7 +130,7 @@ function App() {
               alt="TypeScript"
               className="h-16 w-16"
             />
-            <figcaption>TypeScript</figcaption>
+            <figcaption className="text-center">TypeScript</figcaption>
           </figure>
         </div>
       </section>
@@ -138,7 +143,7 @@ function App() {
           <p className="mt-2.5 text-xl">My work</p>
 
           <div className="grid gap-3 grid-cols-auto-fill mt-2.5">
-            <div className="border-solid border border-black p-2.5">
+            <div className="shadow-2xl bg-gray-50 p-2.5">
               <img
                 src="https://user-images.githubusercontent.com/10659805/153058789-c29aa45f-28d7-4bbc-8905-9ebbfa880e4d.png"
                 alt="Screenshot of Memory Card Project"
@@ -151,11 +156,15 @@ function App() {
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                       alt="Github Repository"
-                      className="h-8 w-8"
+                      className="h-8 w-8 hover:scale-110"
                     />
                   </a>
                   <a href="https://mrmchughes.github.io/Memory-Card/">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
+                    <Icon
+                      path={mdiArrowTopRightBoldBox}
+                      size={1.4}
+                      className="hover:scale-110"
+                    />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -169,7 +178,7 @@ function App() {
               </div>
             </div>
 
-            <div className="border-solid border border-black p-2.5">
+            <div className="shadow-2xl bg-gray-50 p-2.5">
               <img
                 src="https://user-images.githubusercontent.com/10659805/172234215-bb18174b-da8a-4b6e-aa1f-c41522c51b79.png"
                 alt="Screenshot of CV-Application Project"
@@ -182,11 +191,15 @@ function App() {
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                       alt="Github Repository"
-                      className="h-8 w-8"
+                      className="h-8 w-8 hover:scale-110"
                     />
                   </a>
                   <a href="https://mrmchughes.github.io/CV-Application">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
+                    <Icon
+                      path={mdiArrowTopRightBoldBox}
+                      size={1.4}
+                      className="hover:scale-110"
+                    />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -200,7 +213,7 @@ function App() {
               </div>
             </div>
 
-            <div className="border-solid border border-black p-2.5">
+            <div className="shadow-2xl bg-gray-50 p-2.5">
               <img
                 src="https://user-images.githubusercontent.com/10659805/127752181-0bf3586a-fa60-4eb8-888b-d66c3b30b4bd.png"
                 alt="Screenshot of Odins_Operations Project"
@@ -213,11 +226,15 @@ function App() {
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                       alt="Github Repository"
-                      className="h-8 w-8"
+                      className="h-8 w-8 hover:scale-110"
                     />
                   </a>
                   <a href="https://mrmchughes.itch.io/odins-operations">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
+                    <Icon
+                      path={mdiArrowTopRightBoldBox}
+                      size={1.4}
+                      className="hover:scale-110"
+                    />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -228,7 +245,7 @@ function App() {
               </div>
             </div>
 
-            <div className="border-solid border border-black p-2.5">
+            <div className="shadow-2xl bg-gray-50 p-2.5">
               <img
                 src="https://user-images.githubusercontent.com/10659805/172234883-f6d0bd42-cd2d-4efc-a971-732cb0f855b7.png"
                 alt="Screenshot of Todo-List Project"
@@ -241,11 +258,15 @@ function App() {
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                       alt="Github Repository"
-                      className="h-8 w-8"
+                      className="h-8 w-8 hover:scale-110"
                     />
                   </a>
                   <a href="https://mrmchughes.github.io/todo-list-project-2/">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
+                    <Icon
+                      path={mdiArrowTopRightBoldBox}
+                      size={1.4}
+                      className="hover:scale-110"
+                    />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -258,7 +279,7 @@ function App() {
               </div>
             </div>
 
-            <div className="border-solid border border-black p-2.5">
+            <div className="shadow-2xl bg-gray-50 p-2.5">
               <img
                 src="https://user-images.githubusercontent.com/10659805/172235150-a11b8184-580b-4b18-8edf-f24dfd18770b.png"
                 alt="Screenshot of Weather App Project"
@@ -271,11 +292,15 @@ function App() {
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                       alt="Github Repository"
-                      className="h-8 w-8"
+                      className="h-8 w-8 hover:scale-110"
                     />
                   </a>
                   <a href="https://mrmchughes.github.io/Weather-App/">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
+                    <Icon
+                      path={mdiArrowTopRightBoldBox}
+                      size={1.4}
+                      className="hover:scale-110"
+                    />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -289,7 +314,7 @@ function App() {
               </div>
             </div>
 
-            <div className="border-solid border border-black p-2.5">
+            <div className="shadow-2xl bg-gray-50 p-2.5">
               <img
                 src="https://user-images.githubusercontent.com/10659805/164803283-17f48e5d-c2cd-4a71-b931-6778d206e1e1.png"
                 alt="Screenshot of Project"
@@ -302,11 +327,15 @@ function App() {
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                       alt="Github Repository"
-                      className="h-8 w-8"
+                      className="h-8 w-8 hover:scale-110"
                     />
                   </a>
                   <a href="https://mrmchughes.github.io/shopping-cart/">
-                    <Icon path={mdiArrowTopRightBoldBox} size={1.4} />
+                    <Icon
+                      path={mdiArrowTopRightBoldBox}
+                      size={1.4}
+                      className="hover:scale-110"
+                    />
                   </a>
                 </div>
                 <p className="mt-2.5">
@@ -325,30 +354,30 @@ function App() {
 
       <section
         id="contact"
-        className="flex flex-row text-center sm:text-left justify-center p-2.5 mt-2.5"
+        className="flex flex-row text-center justify-center p-2.5 mt-2.5"
       >
         <div>
-          <p className="text-xl">Contact me</p>
-          <p className="mt-2.5">
+          <p className="text-2xl">Contact me</p>
+          <p className="mt-2.5 text-xl">
             Please get in touch if you think our work could be mutually
             beneficial.
           </p>
-          <p className="mt-2.5">Newton, MA</p>
-          <p className="mt-2.5">mrmchughes27@gmail.com</p>
+          <p className="mt-2.5 text-xl">Newton, MA</p>
+          <p className="mt-2.5 text-xl">mrmchughes27@gmail.com</p>
 
-          <div className="mt-2.5 flex flex-row justify-center sm:justify-start space-x-4 mt-2.5">
+          <div className="mt-2.5 flex flex-row justify-center space-x-4 mt-2.5">
             <a href="https://github.com/mrmchughes">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                 alt="Github Repository"
-                className="h-8 w-8"
+                className="h-8 w-8 hover:scale-110"
               />
             </a>
             <a href="https://www.linkedin.com/in/michaelhughes27/">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                 alt="LinkedIn link"
-                className="h-8 w-8"
+                className="h-8 w-8 hover:scale-110"
               />
             </a>
           </div>
@@ -364,20 +393,4 @@ export default App;
 <picture>
   <source srcSet={require("./imgs/profile image.webp")} />    
 </picture>
-*/
-
-/*
-<section className="">
-        <div className="float-left">
-          Michael Hughes
-          <br />
-          Web Developer
-        </div>
-        <div className="float-right">
-          <a href="">About</a>
-          <a href="">Tools</a>
-          <a href="">My Work</a>
-          <a href="">Contact</a>
-        </div>
-      </section> 
 */
