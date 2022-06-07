@@ -4,6 +4,21 @@ import { mdiArrowTopRightBoldBox } from "@mdi/js";
 function App() {
   return (
     <div className="App font-serif">
+      <section className="flex flex-row flex-wrap justify-center">
+        <div className="flex text-center  sm:justify-start text-3xl">
+          Michael Hughes
+        </div>
+        <div className="flex  text-center  sm:justify-end text-2xl space-x-4">
+          <a href="">About</a>
+
+          <a href="">Tools</a>
+
+          <a href="">My Work</a>
+
+          <a href="">Contact</a>
+        </div>
+      </section>
+
       <section className="flex flex-col text-center sm:flex-row sm:text-left justify-center p-2.5">
         <img
           src={require("./imgs/profile image.png")}
@@ -95,14 +110,14 @@ function App() {
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                 alt="Github Profile"
-                className="h-8 w-8"
+                className="h-10 w-10"
               />
             </a>
             <a href="https://www.linkedin.com/in/michaelhughes27/">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                 alt="LinkedIn link"
-                className="h-8 w-8"
+                className="h-10 w-10"
               />
             </a>
           </div>
@@ -337,4 +352,20 @@ export default App;
 <picture>
   <source srcSet={require("./imgs/profile image.webp")} />    
 </picture>
+*/
+
+/*
+<section className="">
+        <div className="float-left">
+          Michael Hughes
+          <br />
+          Web Developer
+        </div>
+        <div className="float-right">
+          <a href="">About</a>
+          <a href="">Tools</a>
+          <a href="">My Work</a>
+          <a href="">Contact</a>
+        </div>
+      </section> 
 */
