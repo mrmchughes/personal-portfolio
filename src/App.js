@@ -1,12 +1,14 @@
 import Icon from "@mdi/react";
 import { mdiArrowTopRightBoldBox } from "@mdi/js";
+import toolsList from "./toolsList";
+import Tool from "./components/Tool";
 
 function App() {
   return (
     <div className="App font-serif">
       <section className="flex flex-row flex-wrap justify-center sm:justify-between p-6">
-        <div className="flex text-center text-3xl">Michael Hughes</div>
-        <div className="flex text-center text-2xl space-x-4">
+        <div className="flex text-3xl">Michael Hughes</div>
+        <div className="flex text-center text-3xl space-x-4">
           <a className="hover:scale-110" href="#about">
             About
           </a>
@@ -30,11 +32,11 @@ function App() {
         className="flex flex-col text-center sm:flex-row sm:text-left justify-center p-2.5"
       >
         <img
-          src={require("./imgs/profile image.png")}
+          src={require("./imgs/profile image.webp")}
           alt="Michael Hughes"
           className="object-contain min-h-48 max-w-sm mr-3.5"
         />
-        <div className="">
+        <div>
           <p className="text-2xl">About me</p>
           <p className="mt-2.5 max-w-md text-xl">
             During a time when I was feeling dissatisfied in my previous career,
@@ -388,9 +390,3 @@ function App() {
 }
 
 export default App;
-
-/* Want to get this working for increased responsiveness 
-<picture>
-  <source srcSet={require("./imgs/profile image.webp")} />    
-</picture>
-*/
