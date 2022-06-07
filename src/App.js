@@ -4,22 +4,23 @@ import { mdiArrowTopRightBoldBox } from "@mdi/js";
 function App() {
   return (
     <div className="App font-serif">
-      <section className="flex flex-row flex-wrap justify-center">
-        <div className="flex text-center  sm:justify-start text-3xl">
-          Michael Hughes
-        </div>
-        <div className="flex  text-center  sm:justify-end text-2xl space-x-4">
-          <a href="">About</a>
+      <section className="flex flex-row flex-wrap justify-center sm:justify-between p-6">
+        <div className="flex text-center text-3xl">Michael Hughes</div>
+        <div className="flex text-center text-2xl space-x-4">
+          <a href="#about">About</a>
 
-          <a href="">Tools</a>
+          <a href="#tools">Tools</a>
 
-          <a href="">My Work</a>
+          <a href="#myWork">My Work</a>
 
-          <a href="">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
       </section>
 
-      <section className="flex flex-col text-center sm:flex-row sm:text-left justify-center p-2.5">
+      <section
+        id="about"
+        className="flex flex-col text-center sm:flex-row sm:text-left justify-center p-2.5"
+      >
         <img
           src={require("./imgs/profile image.png")}
           alt="Michael Hughes"
@@ -35,75 +36,6 @@ function App() {
             developing projects to expand my skills has been a truly rewarding
             journey.
           </p>
-
-          <p className="mt-2.5 text-xl">
-            Some of the tools I have used developing applications:
-          </p>
-
-          <div className="grid gap-4 grid-cols-auto-fit">
-            <figure>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                alt="React"
-                className="h-16 w-16"
-              />
-              <figcaption>React</figcaption>
-            </figure>
-
-            <figure>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                alt="CSS"
-                className="h-16 w-16"
-              />
-              <figcaption>CSS</figcaption>
-            </figure>
-
-            <figure>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                alt="HTML"
-                className="h-16 w-16"
-              />
-              <figcaption>HTML</figcaption>
-            </figure>
-
-            <figure>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                alt="JavaScript"
-                className="h-16 w-16"
-              />
-              <figcaption>JavaScript</figcaption>
-            </figure>
-
-            <figure>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
-                alt="NPM"
-                className="h-16 w-16"
-              />
-              <figcaption>NPM</figcaption>
-            </figure>
-
-            <figure>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                alt="Tailwind CSS"
-                className="h-16 w-16"
-              />
-              <figcaption>Tailwind CSS</figcaption>
-            </figure>
-
-            <figure>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                alt="TypeScript"
-                className="h-16 w-16"
-              />
-              <figcaption>TypeScript</figcaption>
-            </figure>
-          </div>
 
           <div className="mt-2.5 flex flex-row justify-center sm:justify-end space-x-4">
             <a href="https://github.com/mrmchughes">
@@ -124,7 +56,84 @@ function App() {
         </div>
       </section>
 
-      <section className="flex text-center sm:text-left justify-center m-3.5">
+      <section
+        id="tools"
+        className="flex flex-col text-center sm:flex-row sm:text-left justify-center p-2.5"
+      >
+        <p className="mt-2.5 text-xl">
+          Some of the tools I have used developing applications:
+        </p>
+
+        <div className="grid gap-4 grid-cols-auto-fit">
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+              className="h-16 w-16"
+            />
+            <figcaption>React</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS"
+              className="h-16 w-16"
+            />
+            <figcaption>CSS</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML"
+              className="h-16 w-16"
+            />
+            <figcaption>HTML</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+              className="h-16 w-16"
+            />
+            <figcaption>JavaScript</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+              alt="NPM"
+              className="h-16 w-16"
+            />
+            <figcaption>NPM</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+              alt="Tailwind CSS"
+              className="h-16 w-16"
+            />
+            <figcaption>Tailwind CSS</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              alt="TypeScript"
+              className="h-16 w-16"
+            />
+            <figcaption>TypeScript</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section
+        id="myWork"
+        className="flex text-center sm:text-left justify-center m-3.5"
+      >
         <div>
           <p className="mt-2.5 text-xl">My work</p>
 
@@ -314,7 +323,10 @@ function App() {
         </div>
       </section>
 
-      <section className="flex flex-row text-center sm:text-left justify-center p-2.5 mt-2.5">
+      <section
+        id="contact"
+        className="flex flex-row text-center sm:text-left justify-center p-2.5 mt-2.5"
+      >
         <div>
           <p className="text-xl">Contact me</p>
           <p className="mt-2.5">

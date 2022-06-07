@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-image: url("https://images.pexels.com/photos/12310340/pexels-photo-12310340.jpeg?cs=srgb&dl=pexels-lina-kivaka-12310340.jpg&fm=jpg");
+  background-size: cover;
+}
+
+/*background photo taken from https://www.pexels.com/photo/mountain-tops-under-blue-sky-12310340/ */
