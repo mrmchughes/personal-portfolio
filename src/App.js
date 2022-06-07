@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App font-serif">
       <section className="flex flex-row flex-wrap justify-center sm:justify-between p-6">
-        <div className="flex text-3xl">Michael Hughes</div>
+        <a className="flex text-3xl" href="/">
+          Michael Hughes
+        </a>
         <div className="flex text-center text-3xl space-x-4">
           <a className="hover:scale-110" href="#about">
             About
