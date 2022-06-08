@@ -40,7 +40,7 @@ function App() {
           tabIndex="0"
         />
         <div>
-          <p className="text-2xl">About me</p>
+          <h2 className="text-2xl">About me</h2>
           <p className="mt-2.5 max-w-md text-xl">
             During a time when I was feeling dissatisfied in my previous career,
             I began coding by working my way through a beginner’s book on
@@ -119,7 +119,7 @@ function App() {
         className="flex flex-row text-center justify-center p-2.5 mt-2.5 bg-gray-50"
       >
         <div>
-          <p className="text-3xl">Contact me</p>
+          <h2 className="text-3xl">Contact me</h2>
           <p className="mt-2.5 text-xl">
             Please get in touch if you think our work could be mutually
             beneficial.
