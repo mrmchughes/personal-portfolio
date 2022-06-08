@@ -6,30 +6,30 @@ import Project from "./components/Project";
 function App() {
   return (
     <div className="App font-serif">
-      <section className="flex flex-row flex-wrap justify-center sm:justify-between p-6">
-        <a className="flex text-3xl" href="/">
+      <nav className="flex flex-row flex-wrap justify-center sm:justify-between p-6">
+        <a tabIndex="0" className="flex text-3xl" href="/">
           Michael Hughes
         </a>
         <div className="flex text-center text-3xl space-x-4">
-          <a className="hover:scale-110" href="#about">
+          <a tabIndex="0" className="hover:scale-110" href="#about">
             About
           </a>
 
-          <a className="hover:scale-110" href="#tools">
+          <a tabIndex="0" className="hover:scale-110" href="#tools">
             Tools
           </a>
 
-          <a className="hover:scale-110" href="#myWork">
+          <a tabIndex="0" className="hover:scale-110" href="#myWork">
             My Work
           </a>
 
-          <a className="hover:scale-110" href="#contact">
+          <a tabIndex="0" className="hover:scale-110" href="#contact">
             Contact
           </a>
         </div>
-      </section>
+      </nav>
 
-      <section
+      <header
         id="about"
         className="flex flex-col text-center sm:flex-row sm:text-left justify-center p-2.5"
       >
@@ -37,6 +37,7 @@ function App() {
           src={require("./imgs/profile image.webp")}
           alt="Michael Hughes"
           className="object-contain min-h-48 max-w-sm mr-3.5"
+          tabIndex="0"
         />
         <div>
           <p className="text-2xl">About me</p>
@@ -50,14 +51,14 @@ function App() {
           </p>
 
           <div className="mt-2.5 flex flex-row justify-center sm:justify-end space-x-4">
-            <a href="https://github.com/mrmchughes">
+            <a tabIndex="0" href="https://github.com/mrmchughes">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                 alt="Github Profile"
                 className="h-10 w-10 hover:scale-110"
               />
             </a>
-            <a href="https://www.linkedin.com/in/michaelhughes27/">
+            <a tabIndex="0" href="https://www.linkedin.com/in/michaelhughes27/">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                 alt="LinkedIn link"
@@ -66,7 +67,7 @@ function App() {
             </a>
           </div>
         </div>
-      </section>
+      </header>
 
       <section id="tools" className="flex flex-col justify-center p-2.5">
         <p className="mt-2.5 text-2xl text-center">
@@ -87,7 +88,7 @@ function App() {
         </div>
       </section>
 
-      <section
+      <main
         id="myWork"
         className="flex text-center sm:text-left justify-center m-3.5"
       >
@@ -111,30 +112,30 @@ function App() {
             })}
           </div>
         </div>
-      </section>
+      </main>
 
-      <section
+      <footer
         id="contact"
-        className="flex flex-row text-center justify-center p-2.5 mt-2.5"
+        className="flex flex-row text-center justify-center p-2.5 mt-2.5 bg-gray-50"
       >
         <div>
-          <p className="text-2xl">Contact me</p>
+          <p className="text-3xl">Contact me</p>
           <p className="mt-2.5 text-xl">
             Please get in touch if you think our work could be mutually
             beneficial.
           </p>
-          <p className="mt-2.5 text-xl">Newton, MA</p>
-          <p className="mt-2.5 text-xl">mrmchughes27@gmail.com</p>
+          <p className="mt-2.5 text-2xl">Newton, MA</p>
+          <p className="mt-2.5 text-2xl">mrmchughes27@gmail.com</p>
 
           <div className="mt-2.5 flex flex-row justify-center space-x-4 mt-2.5">
-            <a href="https://github.com/mrmchughes">
+            <a tabIndex="0" href="https://github.com/mrmchughes">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                 alt="Github Repository"
                 className="h-8 w-8 hover:scale-110"
               />
             </a>
-            <a href="https://www.linkedin.com/in/michaelhughes27/">
+            <a tabIndex="0" href="https://www.linkedin.com/in/michaelhughes27/">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                 alt="LinkedIn link"
@@ -143,7 +144,7 @@ function App() {
             </a>
           </div>
         </div>
-      </section>
+      </footer>
     </div>
   );
 }
