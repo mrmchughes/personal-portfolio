@@ -7,23 +7,39 @@ function App() {
   return (
     <div className="App font-serif">
       <nav className="flex flex-row flex-wrap justify-center sm:justify-between p-6">
-        <a tabIndex="0" className="flex text-3xl" href="/">
+        <a tabIndex="0" className="flex text-3xl" href="/personal-portfolio">
           Michael Hughes
         </a>
         <div className="flex text-center text-3xl space-x-4">
-          <a tabIndex="0" className="hover:scale-110" href="#about">
+          <a
+            tabIndex="0"
+            className="hover:scale-110"
+            href="/personal-portfolio/#about"
+          >
             About
           </a>
 
-          <a tabIndex="0" className="hover:scale-110" href="#tools">
+          <a
+            tabIndex="0"
+            className="hover:scale-110"
+            href="/personal-portfolio/#tools"
+          >
             Tools
           </a>
 
-          <a tabIndex="0" className="hover:scale-110" href="#myWork">
+          <a
+            tabIndex="0"
+            className="hover:scale-110"
+            href="/personal-portfolio/#myWork"
+          >
             My Work
           </a>
 
-          <a tabIndex="0" className="hover:scale-110" href="#contact">
+          <a
+            tabIndex="0"
+            className="hover:scale-110"
+            href="/personal-portfolio/#contact"
+          >
             Contact
           </a>
         </div>
