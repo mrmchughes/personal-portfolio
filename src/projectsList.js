@@ -10,7 +10,7 @@ const projectsList = [
     livePreview: "https://mrmchughes.github.io/Memory-Card/",
     description:
       "Developed a Card Memory game, where players select a card, and attempt to remember which ones they have already selected.",
-    builtWith: "HTML | CSS | JavaScript | React",
+    builtWith: "Built With: HTML | CSS | JavaScript | React",
   },
   {
     id: uniqid(),

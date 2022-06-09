@@ -34,20 +34,24 @@ function App() {
         className="flex flex-col text-center sm:flex-row sm:text-left justify-center p-2.5"
       >
         <img
-          src={require("./imgs/profile image.webp")}
+          src={require("./imgs/profile image.png")}
           alt="Michael Hughes"
           className="object-contain min-h-48 max-w-sm mr-3.5"
           tabIndex="0"
         />
         <div>
-          <h2 className="text-2xl">About me</h2>
+          <p className="text-2xl">About me</p>
           <p className="mt-2.5 max-w-md text-xl">
             During a time when I was feeling dissatisfied in my previous career,
             I began coding by working my way through a beginner’s book on
-            Python. I knew even then I had found something I was truly
-            passionate about. Thinking my way through logical problems and
-            developing projects to expand my skills has been a truly rewarding
-            journey.
+            Python.
+          </p>
+          <p className="mt-2.5 max-w-md text-xl">
+            I knew even then I had found something I was truly passionate about.
+          </p>
+          <p className="mt-2.5 max-w-md text-xl">
+            Thinking my way through logical problems and developing projects to
+            expand my skills has been a truly rewarding journey.
           </p>
 
           <div className="mt-2.5 flex flex-row justify-center sm:justify-end space-x-4">

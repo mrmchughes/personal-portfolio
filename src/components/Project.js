@@ -4,7 +4,7 @@ import { mdiArrowTopRightBoldBox } from "@mdi/js";
 
 function Project(props) {
   return (
-    <div className="shadow-2xl bg-gray-50 p-2.5">
+    <div className="shadow-md bg-gray-50 p-2.5">
       <img
         src={props.src}
         alt={props.alt}
