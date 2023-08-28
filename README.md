@@ -1,7 +1,7 @@
 <h1>Personal Portfolio</h1>
 
-I developed my Personal Portfolio website as part of The Odin Project's Fullstack [curriculum](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-personal-portfolio).
-This project was another milestone for me, as I got to create my first portfolio website to show off my work.
+
+This project was another milestone for me, as I got to create my portfolio website to show off my work.
 
 [Live Demo](https://mrmchughes.github.io/personal-portfolio/)
 
