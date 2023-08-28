@@ -7,9 +7,9 @@ This project was another milestone for me, as I got to create my first portfolio
 
 ## Screenshots
 
-[Navbar + Header + Tools Section] ![image](https://user-images.githubusercontent.com/10659805/172677468-13859c95-7bb9-4e97-bf85-d48e56016996.png)
-[Projects Section] ![image](https://user-images.githubusercontent.com/10659805/172677627-77ba442c-24f2-4a0e-8304-c57e1490f9de.png)
-[Contact Section] ![image](https://user-images.githubusercontent.com/10659805/172677704-43fc18a7-0c07-4a79-9af1-d98208640775.png)
+[Navbar + Header + Tools Section] ![image](https://github.com/mrmchughes/personal-portfolio/assets/10659805/66e14267-faaf-4a08-8bb4-d983c317882a)
+[Projects Section] ![image](https://github.com/mrmchughes/personal-portfolio/assets/10659805/6ac4340d-13ab-42c9-8a76-455d9345ace7)
+[Contact Section] ![image](https://github.com/mrmchughes/personal-portfolio/assets/10659805/2eddae41-0233-4730-8a13-85d40c6a06b1)
 
 ## Built With
 
@@ -37,6 +37,6 @@ The background photo used was taken from https://www.pexels.com/photo/mountain-t
 
 # License
 
-Copyright © 2022 [Michael Hughes](https://github.com/mrmchughes).
+Copyright © 2023 [Michael Hughes](https://github.com/mrmchughes).
 
 This project is MIT licensed.
